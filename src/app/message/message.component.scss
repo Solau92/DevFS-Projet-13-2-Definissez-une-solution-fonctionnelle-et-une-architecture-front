@@ -1,0 +1,33 @@
+.message-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .new-message {
+    margin-top: 20px;
+  }
+
+  .connexion {
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+
+  .message-from {
+    margin-top: 15px;
+    text-align:right;
+  }
+
+  .message-to {
+    margin-top: 15px;
+    text-align:left;
+  }
