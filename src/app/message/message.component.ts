@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Message } from '../model/message';
 import { Messagedto } from '../model/messagedto';
 
 @Component({
@@ -12,6 +11,7 @@ export class MessageComponent implements OnInit {
   messages: Messagedto[] = [];
   newMessage: string = '';
   email: string = '';
+  connected: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -34,7 +34,7 @@ export class MessageComponent implements OnInit {
           () => {
             this.getMessages(this.email);
             this.newMessage = '';
-            this.refreshMessages(); // ?
+            this.refreshMessages(); 
           },
           (error) => console.error('Error sending message', error)
         );
@@ -48,6 +48,7 @@ export class MessageComponent implements OnInit {
           () => {
             this.email = email;
             this.getMessages(email);
+            this.connected = true;
           },
           (error) => console.error('Error connecting', error)
         );
@@ -62,6 +63,7 @@ export class MessageComponent implements OnInit {
           () => {
             this.email = '';
             this.getMessages('deconnect');
+            this.connected = false;
           },
           (error) => console.error('Error connecting', error)
         );
@@ -71,7 +73,7 @@ export class MessageComponent implements OnInit {
   refreshMessages(): void {
     setInterval(() => {
       this.getMessages(this.email);
-    }, 5000); // Actualise toutes les 5 secondes
+    }, 5000);
   }
 
 }
