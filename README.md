@@ -3,20 +3,20 @@
 #  -- **POC for Your Car Your Way** --
 
 POC for the chat functionality </br>
-The front part of the app uses Angular framework to run.
-The back part of the app uses Java and Spring Boot framework to run.
+The frontend of the app uses Angular framework to run. </br>
+The backend of the app uses Java and Spring Boot framework to run.
 
 ## **Getting Started**
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-##  - **Back part of the app** -
+##  - **Backend of the app** -
 
 Watch [this repository](https://github.com/Solau92/DevFS-Projet-13-Definissez-une-solution-fonctionnelle-et-une-architecture-back.git) and follow the instructions of the ReadMe file. 
 
 When the backend part is launched, you can lauch the front part. 
 
-##  - **Front part of the app** -
+##  - **Frontend of the app** -
 
 ### Technology
 
