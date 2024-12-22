@@ -73,7 +73,7 @@ export class MessageComponent implements OnInit {
   refreshMessages(): void {
     setInterval(() => {
       this.getMessages(this.email);
-    }, 5000);
+    }, 3000);
   }
 
 }
